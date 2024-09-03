@@ -183,5 +183,4 @@ z
 ![image](https://github.com/user-attachments/assets/b0dc52f3-9a89-4a0d-b598-9ece1cda054b)
 
 ### Result
-
-    Thus the Data Cleaning Process and Detecting and Removal of Outliers is executed successfully.     
+Thus the Data Cleaning Process and Detecting and Removal of Outliers is executed successfully.     
