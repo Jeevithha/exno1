@@ -13,44 +13,63 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 ## Coding and Output
 ### Data cleaning process:
+
 ```
 import pandas as pd
 df=pd.read_csv("/content/SAMPLEIDS.csv")
 df
 ```
+
 ![image](https://github.com/user-attachments/assets/93401c95-bb10-41fd-879e-4969a5f7ee4f)
+
 ```
 df.head()
 ```
+
 ![image](https://github.com/user-attachments/assets/1a447fe0-a978-4c92-87b7-a98c6c1d7d84)
+
 ```
 df.tail(5)
 ```
+
 ![image](https://github.com/user-attachments/assets/5cda549c-de93-45b7-ba82-b7f5f5e686af)
+
 ```
 df.isnull()
 ```
+
 ![image](https://github.com/user-attachments/assets/77005ab8-affc-49a0-94bb-e85103cdba08)
+
 ```
 df.notnull()
 ```
+
 ![image](https://github.com/user-attachments/assets/01585993-3e36-4f64-b635-bec23b09a13a)
+
 ```
 df.dropna(axis=0)
 ```
+
 ![image](https://github.com/user-attachments/assets/2f67b824-36bd-4f8b-9b45-e101d99f273c)
+
 ```
 df.dropna(axis=1)
 ```
+
 ![image](https://github.com/user-attachments/assets/6a6d8a81-5109-4079-aa55-9de0774f7a66)
+
 ```
 df.fillna(0)
 ```
+
 ![image](https://github.com/user-attachments/assets/366417b2-0fd6-4a00-b2d8-99bdb7c62661)
+
 ```
 print(df.shape)
 ```
+
 ![image](https://github.com/user-attachments/assets/bef54714-c7f9-48a6-89f7-71feb365d436)
+
 ### IQR:
 ```
 import pandas as pd
